@@ -1,9 +1,9 @@
 
 
 <template>
-  <div class="bg-gray-900 items-center h-screen">
+  <!-- items-center h-screen -->
+  <div class="w-full bg-gray-900 ">
     <HomePage />
-
   </div>
 </template>
 <script>

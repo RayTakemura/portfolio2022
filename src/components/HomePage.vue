@@ -66,8 +66,8 @@ export default {
   }
 } */
 #wrap {
-  width: 25rem;
-  height: 25rem;
+  width: 23rem;
+  height: 23rem;
   padding: 0;
   overflow: hidden;
 }
@@ -79,7 +79,7 @@ export default {
 }
 
 #scaled-frame {
-  zoom: 0.5;
+  /* zoom: 0.5; */
   /* width: 350%;
   height: 100vh; */
   -webkit-transform: scale(0.3);
