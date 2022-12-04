@@ -4,13 +4,16 @@
   <!-- items-center h-screen -->
   <div class="w-full bg-gray-900 ">
     <HomePage />
+    <AboutMe />
   </div>
 </template>
 <script>
 import HomePage from "./components/HomePage.vue"
+import AboutMe from "./components/AboutMe.vue"
 export default {
   components: {
     HomePage,
+    AboutMe,
   },
   name: 'App',
 };
