@@ -1,12 +1,12 @@
 <template>
   <div class="grid grid-cols-1 lg:grid-cols-2 h-screen ">
     <div class="grid grid-cols-1 justify-center lg:content-center mt-auto lg:mt-0 lg:mr-14">
-      <div class="text-4xl  xl:text-6xl lg:text-right text-white">
+      <div class="title-text-size1 lg:text-right text-white">
         Hi 👋🏼
       </div>
-      <div class="text-4xl  xl:text-6xl lg:text-right text-white ">
+      <div class="title-text-size1 lg:text-right text-white ">
         <span>I'm </span>
-        <span class="font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-orange-500">Ray
+        <span class="bold-theme-text">Ray
           Takemura</span>
       </div>
     </div>
@@ -23,7 +23,22 @@
 
 <script>
 export default {
+  methods: {
+    loadImage() {
+      alert("Image is loaded");
+    }
+  },
+  mounted() {
+    let logo = document.querySelector('#scaled-frame');
 
+    logo.addEventListener('load', (event) => {
+      setTimeout(() => {
+        //TODO: emit an event to App.vue so that we can get rid of the initial loading screen!
+        console.log('Logo has been loaded!', event);
+      }, 2000);
+
+    });
+  }
 }
 </script>
 
