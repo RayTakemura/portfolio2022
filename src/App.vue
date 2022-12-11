@@ -6,17 +6,20 @@
     <HomePage />
     <AboutMe />
     <ExperiencePage />
+    <Footer />
   </div>
 </template>
 <script>
-import HomePage from "./components/HomePage.vue"
-import AboutMe from "./components/AboutMe.vue"
-import ExperiencePage from "./components/ExperiencePage.vue"
+import HomePage from "./components/HomePage.vue";
+import AboutMe from "./components/AboutMe.vue";
+import ExperiencePage from "./components/ExperiencePage.vue";
+import Footer from "./components/FooterLinks.vue";
 export default {
   components: {
     HomePage,
     AboutMe,
     ExperiencePage,
+    Footer,
   },
   name: 'App',
 };
@@ -28,7 +31,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: rgb(255 255 255);
   /* margin-top: 60px; */
 }
 </style>

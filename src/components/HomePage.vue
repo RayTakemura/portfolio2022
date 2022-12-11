@@ -13,12 +13,8 @@
     <div class="container m-auto lg:ml-14" id="wrap">
       <iframe class="responsive-iframe" id="scaled-frame"
         src='https://my.spline.design/untitled-e0a1d03472edbe77f3631bf8d12c4d28/' frameborder='0'></iframe>
-
     </div>
-
   </div>
-
-
 </template>
 
 <script>
