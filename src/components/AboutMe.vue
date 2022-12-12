@@ -7,9 +7,9 @@
     <div>
       <span class="text-white">I’m a full-stack web developer who’s excited to learn more about building a better
         program
-        every day. Currently, I have a strong understanding of Vue.js, React.js, Laravel, PHP, MySql, mongoDB and more.
-        As a developer, I focus on learning new tools and techniques, and communicate with the
-        team well in order to maximize the efficiency to build a fantastic website. </span>
+        every day. Currently, I have a strong understanding of Vue.js, React.js, Laravel, PHP, MySql, MongoDB, and more.
+        As a developer, I focus on learning new tools and techniques and communicating with the team well in order to
+        maximize the efficiency to build a fantastic website. </span>
     </div>
   </div>
 </template>
