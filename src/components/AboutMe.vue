@@ -5,18 +5,11 @@
         class="title-text-size2 my-auto">😊</span>
     </div>
     <div>
-      <span class="text-white">I’m a web developer who’s excited to learn more about building a better program
-        every
-        day. Currently, I work
-        for Fulfillment Express as a full-stack web developer. Working as a full-stack developer at Fulfillment Express
-        has taught me a lot : Not only to become a better developer, but a better worker overall. Additionally, I have
-        been learning how to design a better page by utilizing design tools such as Figma. </span>
+      <span class="text-white">I’m a full-stack web developer who’s excited to learn more about building a better
+        program
+        every day. Currently, I have a strong understanding of Vue.js, React.js, Laravel, PHP, MySql, mongoDB and more.
+        As a developer, I focus on learning new tools and techniques, and communicate with the
+        team well in order to maximize the efficiency to build a fantastic website. </span>
     </div>
   </div>
 </template>
-
-<script>
-</script>
-<style>
-
-</style>
