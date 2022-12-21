@@ -3,25 +3,41 @@
 <template>
   <!-- items-center h-screen -->
   <div class="w-full bg-gray-900 ">
-    <HomePage />
-    <AboutMe />
-    <ExperiencePage />
-    <Footer />
+    <LoadScreen v-if="showLoader" />
+    <!-- v-show="!showLoader" @hide-loader="hideLoader()"  -->
+    <HomePage v-show="!showLoader" @hide-loader="hideLoader()" />
+    <AboutMe v-if="!showLoader" />
+    <ExperiencePage v-if="!showLoader" />
+    <Footer v-if="!showLoader" />
+
+
   </div>
 </template>
 <script>
+import LoadScreen from "./components/LoadScreen.vue";
 import HomePage from "./components/HomePage.vue";
 import AboutMe from "./components/AboutMe.vue";
 import ExperiencePage from "./components/ExperiencePage.vue";
 import Footer from "./components/FooterLinks.vue";
 export default {
   components: {
+    LoadScreen,
     HomePage,
     AboutMe,
     ExperiencePage,
     Footer,
   },
   name: 'App',
+  data() {
+    return {
+      showLoader: true,
+    }
+  },
+  methods: {
+    hideLoader() {
+      this.showLoader = false;
+    }
+  }
 };
 </script>
 

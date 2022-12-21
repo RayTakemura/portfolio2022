@@ -19,6 +19,7 @@
 
 <script>
 export default {
+  emits: ['hideLoader'],
   methods: {
     loadImage() {
       alert("Image is loaded");
@@ -31,6 +32,7 @@ export default {
       setTimeout(() => {
         //TODO: emit an event to App.vue so that we can get rid of the initial loading screen!
         console.log('Logo has been loaded!', event);
+        this.$emit("hideLoader")
       }, 2000);
 
     });
