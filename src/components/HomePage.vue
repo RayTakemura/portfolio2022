@@ -1,19 +1,24 @@
 <template>
-  <div class="grid grid-cols-1 lg:grid-cols-2 h-screen ">
-    <div class="grid grid-cols-1 justify-center lg:content-center mt-auto lg:mt-0 lg:mr-14">
-      <div class="title-text-size1 lg:text-right text-white">
+  <!-- lg:grid-cols-2 -->
+  <div class="grid grid-cols-1  h-screen ">
+    <div class="grid grid-cols-1 justify-center content-center mt-auto lg:mt-0 ">
+      <div class="title-text-size1 text-center text-white">
         Hi 👋🏼
       </div>
-      <div class="title-text-size1 lg:text-right text-white ">
+      <div class="title-text-size1 text-center text-white ">
         <span>I'm </span>
         <span class="bold-theme-text">Ray
           Takemura</span>
       </div>
     </div>
-    <div class="container m-auto lg:ml-14" id="wrap">
+    <!-- <div class="container m-auto lg:ml-14" id="wrap">
       <iframe class="responsive-iframe" id="scaled-frame"
         src='https://my.spline.design/untitled-e0a1d03472edbe77f3631bf8d12c4d28/' frameborder='0'></iframe>
-    </div>
+    </div> -->
+    <!-- <div class="container m-auto lg:ml-14" id="wrap">
+      <iframe class="responsive-iframe" id="scaled-frame"
+        src='https://my.spline.design/untitled-e0a1d03472edbe77f3631bf8d12c4d28/' frameborder='0'></iframe>
+    </div> -->
   </div>
 </template>
 
@@ -54,10 +59,11 @@ export default {
   border: 0px;
 }
 
-#scaled-frame {
-  /* zoom: 0.5; */
-  /* width: 350%;
+/* zoom: 0.5; */
+/* width: 350%;
   height: 100vh; */
+#scaled-frame {
+
   -webkit-transform: scale(0.3);
   -webkit-transform-origin: 0 0;
   -o-transform: scale(0.3);

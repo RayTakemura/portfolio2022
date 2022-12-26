@@ -30,7 +30,7 @@ export default {
   name: 'App',
   data() {
     return {
-      showLoader: true,
+      showLoader: false,
     }
   },
   methods: {
