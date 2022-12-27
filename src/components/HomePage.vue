@@ -10,14 +10,21 @@
           Takemura</span>
       </div>
     </div>
-    <div class="container m-auto lg:ml-14" id="wrap">
-      <iframe class="responsive-iframe" id="scaled-frame"
-        src='https://my.spline.design/untitled-e0a1d03472edbe77f3631bf8d12c4d28/' frameborder='0'></iframe>
+    <div class="container m-auto lg:ml-14" id="wrap canvas3d">
+      <!-- <iframe class="responsive-iframe" id="scaled-frame"
+        src='https://my.spline.design/untitled-e0a1d03472edbe77f3631bf8d12c4d28/' frameborder='0'></iframe> -->
     </div>
   </div>
 </template>
 
 <script>
+// import { Application } from '@splinetool/runtime';
+
+// const canvas = document.getElementById('canvas3d');
+// const app = new Application(canvas);
+// console.log(app, canvas, Application)
+// app.load('https://prod.spline.design/YpGl7qmJmHCHqjQV/scene.splinecode');
+
 export default {
   emits: ['hideLoader'],
   methods: {
@@ -26,16 +33,16 @@ export default {
     }
   },
   mounted() {
-    let logo = document.querySelector('#scaled-frame');
+    // let logo = document.querySelector('#scaled-frame');
 
-    logo.addEventListener('load', (event) => {
-      setTimeout(() => {
-        //TODO: emit an event to App.vue so that we can get rid of the initial loading screen!
-        console.log('Logo has been loaded!', event);
-        this.$emit("hideLoader")
-      }, 2000);
+    // logo.addEventListener('load', (event) => {
+    //   setTimeout(() => {
+    //     //TODO: emit an event to App.vue so that we can get rid of the initial loading screen!
+    //     console.log('Logo has been loaded!', event);
+    //     this.$emit("hideLoader")
+    //   }, 2000);
 
-    });
+    // });
   }
 }
 </script>
