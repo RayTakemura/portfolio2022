@@ -1,24 +1,18 @@
 <template>
   <!-- lg:grid-cols-2 -->
-  <div class="grid grid-cols-1  h-screen ">
-    <div class="grid grid-cols-1 justify-center content-center mt-auto lg:mt-0 ">
-      <div class="title-text-size1 text-center text-white">
-        Hi 👋🏼
-      </div>
-      <div class="title-text-size1 text-center text-white ">
-        <span>I'm </span>
-        <span class="bold-theme-text">Ray
-          Takemura</span>
+  <div class="grid grid-cols-1 h-screen ">
+    <div class="hero-image my-auto">
+      <div class="grid grid-cols-1 justify-center content-center my-auto ">
+        <div class="title-text-size1 text-center text-white">
+          Hi 👋🏼
+        </div>
+        <div class="title-text-size1 text-center text-white ">
+          <span>I'm </span>
+          <span class="bold-theme-text">Ray
+            Takemura</span>
+        </div>
       </div>
     </div>
-    <!-- <div class="container m-auto lg:ml-14" id="wrap">
-      <iframe class="responsive-iframe" id="scaled-frame"
-        src='https://my.spline.design/untitled-e0a1d03472edbe77f3631bf8d12c4d28/' frameborder='0'></iframe>
-    </div> -->
-    <!-- <div class="container m-auto lg:ml-14" id="wrap">
-      <iframe class="responsive-iframe" id="scaled-frame"
-        src='https://my.spline.design/untitled-e0a1d03472edbe77f3631bf8d12c4d28/' frameborder='0'></iframe>
-    </div> -->
   </div>
 </template>
 
@@ -31,21 +25,27 @@ export default {
     }
   },
   mounted() {
-    let logo = document.querySelector('#scaled-frame');
-
-    logo.addEventListener('load', (event) => {
-      setTimeout(() => {
-        //TODO: emit an event to App.vue so that we can get rid of the initial loading screen!
-        console.log('Logo has been loaded!', event);
-        this.$emit("hideLoader")
-      }, 2000);
-
-    });
   }
 }
 </script>
 
 <style scoped >
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../assets/bamboos2\ edited.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
 #wrap {
   width: 23rem;
   height: 23rem;
