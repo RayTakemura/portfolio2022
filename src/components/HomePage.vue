@@ -13,12 +13,17 @@
         </div>
       </div>
     </div>
+    <HomePageImage />
   </div>
 </template>
 
 <script>
+import HomePageImage from "./HomePageImage.vue"
 export default {
   emits: ['hideLoader'],
+  component: {
+    HomePageImage,
+  },
   methods: {
     loadImage() {
       alert("Image is loaded");
