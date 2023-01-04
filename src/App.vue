@@ -9,8 +9,6 @@
     <AboutMe />
     <ExperiencePage />
     <Footer />
-
-
   </div>
 </template>
 <script>

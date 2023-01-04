@@ -13,16 +13,16 @@
         </div>
       </div>
     </div>
-    <HomePageImage />
+    <ViewPort />
   </div>
 </template>
 
 <script>
-import HomePageImage from "./HomePageImage.vue"
+import ViewPort from "./ViewPort.vue"
 export default {
   emits: ['hideLoader'],
   component: {
-    HomePageImage,
+    ViewPort,
   },
   methods: {
     loadImage() {
