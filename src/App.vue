@@ -5,11 +5,16 @@
   <div class="w-full bg-gray-900 ">
     <!-- <LoadScreen v-if="showLoader" /> -->
     <!-- v-show="!showLoader" @hide-loader="hideLoader()"  -->
+    <!-- <div class="fixed">
+      
+    </div>
+    <div class="inline-block">
+      
+    </div> -->
     <HomePage />
     <AboutMe />
     <ExperiencePage />
     <Footer />
-
 
   </div>
 </template>

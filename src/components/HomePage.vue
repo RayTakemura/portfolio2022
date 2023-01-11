@@ -1,19 +1,31 @@
 <template>
   <!-- lg:grid-cols-2 -->
-  <div class="grid grid-cols-1 h-screen ">
-    <div class="hero-image my-auto">
-      <div class="grid grid-cols-1 justify-center content-center my-auto ">
-        <div class="title-text-size1 text-center text-white">
-          Hi 👋🏼
-        </div>
-        <div class="title-text-size1 text-center text-white ">
-          <span>I'm </span>
-          <span class="bold-theme-text">Ray
-            Takemura</span>
-        </div>
+  <!-- <div class="grid grid-cols-1  "> -->
+  <div class="hero-polygon hero-mask h-screen flex justify-center content-center">
+    <div class="flex flex-col justify-center content-center my-auto w-fit">
+      <div class="title-text-size1 text-center text-white ">
+        Hi 👋🏼
+      </div>
+      <div class="title-text-size1 text-center text-white">
+        <span>I'm </span>
+        <span class="bold-theme-text">Ray
+          Takemura</span>
       </div>
     </div>
   </div>
+  <!-- </div> -->
+  <!-- <div class="grid grid-cols-1 h-screen my-auto">
+    <div class="grid grid-cols-1 justify-center content-center my-auto ">
+      <div class="title-text-size1 text-center text-white">
+        Hi 👋🏼
+      </div>
+      <div class="title-text-size1 text-center text-white ">
+        <span>I'm </span>
+        <span class="bold-theme-text">Ray
+          Takemura</span>
+      </div>
+    </div>
+  </div> -->
 </template>
 
 <script>
@@ -30,14 +42,29 @@ export default {
 </script>
 
 <style scoped >
-.hero-image {
+.hero-mask {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../assets/bamboos2\ edited.jpg");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../assets/bamboos2 edited.jpg"); */
+
+  background-image: url("./../assets/texture.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: auto;
+  position: relative;
 
   /* Set a specific height */
-  height: 100%;
+  /* height: 100%; */
 
   /* Position and center the image to scale nicely on all screens */
+
+  /* background-size: 544px 544px, 10px;
+  background-repeat: no-repeat, repeat;
+  background-position: 100% 100%, 0 0; */
+}
+
+.hero-polygon {
+  background-image: url("./../assets/Polygon\ 1.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
