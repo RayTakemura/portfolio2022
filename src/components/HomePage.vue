@@ -1,44 +1,78 @@
 <template>
-  <div class="grid grid-cols-1 lg:grid-cols-2 h-screen ">
-    <div class="grid grid-cols-1 justify-center lg:content-center mt-auto lg:mt-0 lg:mr-14">
-      <div class="title-text-size1 lg:text-right text-white">
+  <!-- lg:grid-cols-2 -->
+  <!-- <div class="grid grid-cols-1  "> -->
+  <div class="hero-polygon hero-mask h-screen flex justify-center content-center">
+    <div class="flex flex-col justify-center content-center my-auto w-fit">
+      <div class="title-text-size1 text-center text-white ">
         Hi 👋🏼
       </div>
-      <div class="title-text-size1 lg:text-right text-white ">
+      <div class="title-text-size1 text-center text-white">
         <span>I'm </span>
         <span class="bold-theme-text">Ray
           Takemura</span>
       </div>
     </div>
-    <div class="container m-auto lg:ml-14" id="wrap">
-      <iframe class="responsive-iframe" id="scaled-frame"
-        src='https://my.spline.design/untitled-e0a1d03472edbe77f3631bf8d12c4d28/' frameborder='0'></iframe>
-    </div>
   </div>
+  <!-- </div> -->
+  <!-- <div class="grid grid-cols-1 h-screen my-auto">
+    <div class="grid grid-cols-1 justify-center content-center my-auto ">
+      <div class="title-text-size1 text-center text-white">
+        Hi 👋🏼
+      </div>
+      <div class="title-text-size1 text-center text-white ">
+        <span>I'm </span>
+        <span class="bold-theme-text">Ray
+          Takemura</span>
+      </div>
+    </div>
+  </div> -->
 </template>
 
 <script>
 export default {
+  emits: ['hideLoader'],
   methods: {
     loadImage() {
       alert("Image is loaded");
     }
   },
   mounted() {
-    let logo = document.querySelector('#scaled-frame');
-
-    logo.addEventListener('load', (event) => {
-      setTimeout(() => {
-        //TODO: emit an event to App.vue so that we can get rid of the initial loading screen!
-        console.log('Logo has been loaded!', event);
-      }, 2000);
-
-    });
   }
 }
 </script>
 
 <style scoped >
+.hero-mask {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../assets/bamboos2 edited.jpg"); */
+
+  background-image: url("./../assets/texture.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: auto;
+  position: relative;
+
+  /* Set a specific height */
+  /* height: 100%; */
+
+  /* Position and center the image to scale nicely on all screens */
+
+  /* background-size: 544px 544px, 10px;
+  background-repeat: no-repeat, repeat;
+  background-position: 100% 100%, 0 0; */
+}
+
+.hero-polygon {
+  background-image: url("./../assets/Polygon\ 1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
 #wrap {
   width: 23rem;
   height: 23rem;
@@ -52,10 +86,11 @@ export default {
   border: 0px;
 }
 
-#scaled-frame {
-  /* zoom: 0.5; */
-  /* width: 350%;
+/* zoom: 0.5; */
+/* width: 350%;
   height: 100vh; */
+#scaled-frame {
+
   -webkit-transform: scale(0.3);
   -webkit-transform-origin: 0 0;
   -o-transform: scale(0.3);
