@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .bold-theme-text {
+    @apply font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-orange-500;
+  }
+  .title-text-size1 {
+    @apply text-4xl  xl:text-6xl
+  }
+  .title-text-size2 {
+    @apply text-2xl  xl:text-4xl
+  }
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  
+}
