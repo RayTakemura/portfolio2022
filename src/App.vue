@@ -1,5 +1,3 @@
-
-
 <template>
   <!-- items-center h-screen -->
   <div class="w-full bg-gray-900 ">
